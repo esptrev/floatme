@@ -19,7 +19,7 @@ public class Job {
     @Column(nullable = false)
     private String title;
 
-    @Column
+    @Column(nullable = false)
     private int salary;
 
 }
