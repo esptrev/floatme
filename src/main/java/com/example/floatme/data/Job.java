@@ -11,11 +11,15 @@ import javax.persistence.*;
 
 @Table(name = "jobs")
 public class Job {
-@Generated
-private long id;
 
-@Column(nullable = false)
-private String title;
-private int salary;
+    @Id
+    @Generated
+    private long id;
+
+    @Column(nullable = false)
+    private String title;
+
+    @Column
+    private int salary;
 
 }
